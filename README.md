@@ -1,28 +1,36 @@
-# JobPulse India — Vercel + GitHub Actions + Telegram
+# JobPulse India — Role + City + Telegram
 
-A beginner-friendly job dashboard that collects India job listings, classifies them by **role** and **city**, scores them against the profile, updates `jobs.json`, and sends a Telegram alert when new matching jobs are found.
+This is a beginner-friendly static Vercel dashboard plus a GitHub Actions collector.
 
 ## What it does
-- Role categories: Software Engineer, Backend Engineer, Data Engineer, Machine Learning Engineer, Data Scientist, Full Stack Engineer, Python Developer.
-- City categories: Bengaluru, Hyderabad, Chennai, Pune, Gurgaon, Mumbai, Noida, Delhi, Kolkata, Kochi, Ahmedabad, Remote India, Other India.
-- Filters the dashboard by role and city.
-- Sends Telegram alerts only for new matching jobs (score >= 50).
-- Runs from GitHub Actions about every 30 minutes.
-- Vercel hosts the website.
+- Refreshes approximately every 30 minutes through GitHub Actions.
+- Collects from multiple permitted/public job feeds: Ashby, Lever, Greenhouse (when configured), and Adzuna (when configured).
+- Filters to India and your target roles/cities.
+- Avoids senior/leadership roles by default because the profile is early-career.
+- Deduplicates listings by application URL.
+- Updates `jobs.json` for the Vercel dashboard.
+- Sends a Telegram message only when new matching jobs are found.
+- Shows role and city category filters in the dashboard.
 
-## GitHub Actions secrets
-Add these under **Settings → Secrets and variables → Actions**:
-- `TELEGRAM_BOT_TOKEN` — your BotFather token (never commit this).
-- `TELEGRAM_CHAT_ID` — your private chat ID.
-- `ASHBY_BOARDS` — optional comma-separated Ashby board names. Defaults to `aiprise,ontic,sarvam`.
-- `GREENHOUSE_BOARDS` — optional comma-separated Greenhouse board tokens.
-- `ADZUNA_APP_ID` and `ADZUNA_APP_KEY` — optional, for Adzuna.
+## GitHub Secrets
+In **Settings → Secrets and variables → Actions**, add:
+- `TELEGRAM_BOT_TOKEN` — your BotFather token
+- `TELEGRAM_CHAT_ID` — your Telegram chat ID (currently 5775236222)
+- `ADZUNA_APP_ID` — optional but strongly recommended for broad cross-company coverage
+- `ADZUNA_APP_KEY` — optional but strongly recommended for broad cross-company coverage
+- `ASHBY_BOARDS` — optional comma-separated Ashby board names
+- `LEVER_SITES` — optional comma-separated Lever site names
+- `GREENHOUSE_BOARDS` — optional comma-separated Greenhouse board tokens
+
+Never commit a Telegram token or API key to the repository.
+
+## Important coverage note
+No single public API contains every employer's open roles. ATS feeds can be used where employers publish through them; Adzuna provides broad search coverage. For companies without a usable public feed, add their supported ATS board token/site name to the relevant secret rather than scraping their website.
 
 ## Deployment
-The root contains `index.html`, so Vercel can deploy it as an Other/static project. The collector is **not** a Vercel server; it runs in GitHub Actions.
+The site is static and can be imported directly into Vercel with preset **Other** and root directory `./`.
+
+The collector runs from GitHub Actions, not as a long-running Vercel server.
 
 ## Telegram behavior
-No message is sent when there are no new matching jobs. When new jobs are found, the alert includes role and city categories plus direct employer/ATS application links.
-
-## Important
-Job feeds can change, close, or rate-limit. The collector only reports listings returned by configured sources at refresh time. It does not submit applications automatically.
+No new matching jobs = no Telegram message. New jobs are grouped by role and city, and up to 10 of the best matches are included with Apply links.

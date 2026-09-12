@@ -1,6 +1,6 @@
 {
-  "name":"SreeVardhan Capilai",
-  "skills":["Python","Java","C","SQL","MongoDB","XGBoost","scikit-learn","TensorFlow","Apache Spark","Apache Kafka","Pandas","NumPy","Matplotlib","Seaborn","librosa","HTML","CSS","JavaScript","Git","GitHub","Linux","Kubernetes"],
-  "roles":["Software Engineer","Backend Engineer","Data Engineer","Machine Learning Engineer","Data Scientist","Full Stack Engineer","Python Developer"],
-  "locations":["India","Bengaluru","Bangalore","Hyderabad","Chennai","Pune","Gurgaon","Gurugram","Mumbai","Noida","Delhi"]
+  "name": "SreeVardhan Capilai",
+  "skills": ["Python", "Java", "C", "SQL", "MongoDB", "XGBoost", "scikit-learn", "TensorFlow", "Apache Spark", "Apache Kafka", "Pandas", "NumPy", "Matplotlib", "Seaborn", "librosa", "HTML", "CSS", "JavaScript", "Git", "GitHub", "Linux", "Kubernetes"],
+  "roles": ["Software Engineer", "Backend Engineer", "Data Engineer", "Machine Learning Engineer", "Data Scientist", "Full Stack Engineer", "Python Developer"],
+  "locations": ["Bengaluru", "Bangalore", "Hyderabad", "Chennai", "Pune", "Gurgaon", "Gurugram", "Mumbai", "Noida", "Delhi", "Kolkata", "Kochi", "Ahmedabad", "Remote India"]
 }
