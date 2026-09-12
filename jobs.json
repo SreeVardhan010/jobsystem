@@ -1,1 +1,20 @@
-{"updatedAt":null,"jobs":[]}
+{
+  "updatedAt": "2026-09-12T20:52:04.536Z",
+  "filters": {
+    "graduationBatch": "2026",
+    "experienceLevel": "fresher",
+    "targetCategories": [
+      "Software Development",
+      "Data Engineering",
+      "Data Analytics",
+      "Data Science",
+      "Machine Learning"
+    ],
+    "excluded": [
+      "internships",
+      "senior/experienced roles"
+    ]
+  },
+  "counts": {},
+  "jobs": []
+}
