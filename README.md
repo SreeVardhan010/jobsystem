@@ -1,37 +1,28 @@
-# JobPulse India — 2026 Fresher Edition (No WhatsApp)
+# JobPulse India — Vercel + GitHub Actions + Telegram
 
-Vercel hosts the dashboard. GitHub Actions runs the collector approximately every 30 minutes.
+A beginner-friendly job dashboard that collects India job listings, classifies them by **role** and **city**, scores them against the profile, updates `jobs.json`, and sends a Telegram alert when new matching jobs are found.
 
-## Target roles
+## What it does
+- Role categories: Software Engineer, Backend Engineer, Data Engineer, Machine Learning Engineer, Data Scientist, Full Stack Engineer, Python Developer.
+- City categories: Bengaluru, Hyderabad, Chennai, Pune, Gurgaon, Mumbai, Noida, Delhi, Kolkata, Kochi, Ahmedabad, Remote India, Other India.
+- Filters the dashboard by role and city.
+- Sends Telegram alerts only for new matching jobs (score >= 50).
+- Runs from GitHub Actions about every 30 minutes.
+- Vercel hosts the website.
 
-- Software Development
-- Data Engineering
-- Data Analytics
-- Data Science
-- Machine Learning / AI
+## GitHub Actions secrets
+Add these under **Settings → Secrets and variables → Actions**:
+- `TELEGRAM_BOT_TOKEN` — your BotFather token (never commit this).
+- `TELEGRAM_CHAT_ID` — your private chat ID.
+- `ASHBY_BOARDS` — optional comma-separated Ashby board names. Defaults to `aiprise,ontic,sarvam`.
+- `GREENHOUSE_BOARDS` — optional comma-separated Greenhouse board tokens.
+- `ADZUNA_APP_ID` and `ADZUNA_APP_KEY` — optional, for Adzuna.
 
-The matching profile is configured for a 2026 graduate/fresher and excludes internships and clearly senior/experienced roles.
+## Deployment
+The root contains `index.html`, so Vercel can deploy it as an Other/static project. The collector is **not** a Vercel server; it runs in GitHub Actions.
 
-## GitHub setup
-
-The workflow is at `.github/workflows/refresh.yml` and can be started manually from **GitHub → Actions → Refresh 2026 fresher jobs → Run workflow**.
-
-The workflow safely synchronizes with the latest `main` branch before pushing generated `jobs.json`, avoiding the common non-fast-forward error.
-
-## Live job sources
-
-The collector supports:
-
-- Ashby public job boards (default: `aiprise,ontic,sarvam`)
-- Greenhouse public boards via `GREENHOUSE_BOARDS`
-- Adzuna India via `ADZUNA_APP_ID` and `ADZUNA_APP_KEY`
-
-Add API credentials as GitHub Actions secrets. Never put API keys in `index.html` or other public files.
-
-## Vercel
-
-Vercel serves `index.html` and `jobs.json`. When GitHub Actions commits a new `jobs.json`, the connected Vercel project can redeploy automatically.
+## Telegram behavior
+No message is sent when there are no new matching jobs. When new jobs are found, the alert includes role and city categories plus direct employer/ATS application links.
 
 ## Important
-
-The dashboard can only show jobs supplied by the configured feeds. More feeds/board tokens increase coverage. No WhatsApp functionality is included in this version.
+Job feeds can change, close, or rate-limit. The collector only reports listings returned by configured sources at refresh time. It does not submit applications automatically.
