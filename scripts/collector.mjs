@@ -1,194 +1,108 @@
 import fs from 'node:fs/promises';
 import crypto from 'node:crypto';
 
-const root = new URL('../', import.meta.url).pathname;
+const root = new URL('..', import.meta.url).pathname;
 const jobsPath = root + 'jobs.json';
 const profile = JSON.parse(await fs.readFile(root + 'profile.json', 'utf8'));
 const previous = JSON.parse(await fs.readFile(jobsPath, 'utf8'));
 
-const split = s => (s || '').split(',').map(x => x.trim()).filter(Boolean);
-const norm = s => (s || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+const split = s => (s||'').split(',').map(x=>x.trim()).filter(Boolean);
+const norm = s => (s||'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 const india = s => /india|bengaluru|bangalore|hyderabad|chennai|pune|gurgaon|gurugram|mumbai|noida|delhi|kochi|kolkata|ahmedabad|remote/.test(norm(s));
 const skills = profile.skills.map(norm);
-const roleGroups = Object.entries(profile.targetRoles).map(([category, roles]) => ({ category, roles: roles.map(norm) }));
-const hash = s => crypto.createHash('sha256').update(s).digest('hex').slice(0, 16);
+const roles = profile.roles.map(norm);
+const hash = s => crypto.createHash('sha256').update(s).digest('hex').slice(0,16);
 
-const fresherSignals = [
-  'fresher', 'freshers', 'new grad', 'new graduate', 'graduate', 'graduates',
-  'entry level', 'entry-level', '0 1 year', '0-1 year', '0 to 1 year',
-  '0 2 years', '0-2 years', '0 to 2 years', 'associate', 'trainee',
-  'campus', 'college graduate', 'university graduate', '2026 batch', '2026 graduate',
-  '2026 graduates', '2025 2026', '2026 2027'
-].map(norm);
-const internshipSignals = ['intern', 'internship', 'summer intern', 'student intern'].map(norm);
-const seniorSignals = [
-  '2+ years', '3+ years', '4+ years', '5+ years', '6+ years', '7+ years',
-  '2 years of experience', '3 years of experience', '4 years of experience',
-  '5 years of experience', 'senior', 'sr.', 'lead', 'principal', 'manager', 'architect', 'staff engineer'
-].map(norm);
+const ROLE_RULES = [
+  ['Machine Learning Engineer', /machine learning|ml engineer|ml developer|ai engineer|applied ml/],
+  ['Data Scientist', /data scientist|data science/],
+  ['Data Engineer', /data engineer|data platform engineer|analytics engineer/],
+  ['Backend Engineer', /backend engineer|back end engineer|backend developer|back end developer|server side engineer/],
+  ['Full Stack Engineer', /full stack|fullstack/],
+  ['Python Developer', /python developer|python engineer/],
+  ['Software Engineer', /software engineer|software developer|sde\b|application engineer/]
+];
+const CITY_RULES = [
+  ['Bengaluru', /bengaluru|bangalore/],
+  ['Hyderabad', /hyderabad/],
+  ['Chennai', /chennai/],
+  ['Pune', /pune/],
+  ['Gurgaon', /gurgaon|gurugram/],
+  ['Mumbai', /mumbai/],
+  ['Noida', /noida/],
+  ['Delhi', /delhi/],
+  ['Kolkata', /kolkata/],
+  ['Kochi', /kochi/],
+  ['Ahmedabad', /ahmedabad/],
+  ['Remote India', /remote.*india|india.*remote|remote/]
+];
 
-function experienceFit(title, description = '') {
-  const text = norm(`${title} ${description}`);
-  const hasSenior = seniorSignals.some(s => text.includes(s));
-  const hasFresher = fresherSignals.some(s => text.includes(s));
-  const isInternship = internshipSignals.some(s => text.includes(s));
-  if (isInternship) return { eligible: false, reason: 'internship' };
-  if (hasSenior) return { eligible: false, reason: 'experienced-role' };
-  return { eligible: true, fresherSignal: hasFresher };
+function classifyRole(title, description='') {
+  const t=norm(title);
+  for (const [label,re] of ROLE_RULES) if(re.test(t)) return label;
+  // Only use description as a fallback when the title is generic.
+  const d=norm(description).slice(0,5000);
+  if(/machine learning|ml engineer|ai engineer/.test(d)) return 'Machine Learning Engineer';
+  if(/data scientist|data science/.test(d)) return 'Data Scientist';
+  if(/data engineer|data platform/.test(d)) return 'Data Engineer';
+  if(/backend|back end/.test(d)) return 'Backend Engineer';
+  if(/full stack|fullstack/.test(d)) return 'Full Stack Engineer';
+  if(/python developer|python engineer/.test(d)) return 'Python Developer';
+  if(/software engineer|software developer/.test(d)) return 'Software Engineer';
+  return null;
+}
+function classifyCity(location) {
+  const l=norm(location);
+  for (const [label,re] of CITY_RULES) if(re.test(l)) return label;
+  return 'Other India';
+}
+function score(j) {
+  const text=norm(`${j.title} ${j.description} ${j.location}`);
+  let hits=skills.filter(s=>text.includes(s)).length;
+  let role=roles.some(r=>text.includes(r));
+  let n=Math.min(100, Math.round((hits/Math.max(5,Math.min(skills.length,12)))*80)+(role?20:0));
+  return n;
+}
+async function getJson(url){const r=await fetch(url,{headers:{'user-agent':'JobPulse/1.1'}});if(!r.ok)throw new Error(`${r.status} ${url}`);return r.json()}
+
+function makeJob({title,company,location,applyUrl,source,publishedAt,description}) {
+  const roleCategory=classifyRole(title,description);
+  if(!roleCategory) return null; // role-specific feed: ignore jobs that don't fit the configured role categories
+  const sc=score({title,description,location});
+  return {id:hash(applyUrl),title,company,location,applyUrl,source,publishedAt:publishedAt||null,discoveredAt:publishedAt||new Date().toISOString(),score:sc,matchLevel:sc>=75?'Apply First':sc>=50?'Good Match':'Stretch',roleCategory,cityCategory:classifyCity(location),skills:profile.skills.filter(s=>norm(description).includes(norm(s))).slice(0,8)};
 }
 
-function classifyRole(title, description = '') {
-  const text = norm(`${title} ${description}`);
-  let best = null;
-  for (const group of roleGroups) {
-    const hits = group.roles.filter(r => text.includes(r));
-    if (hits.length && (!best || hits.length > best.hits.length)) best = { category: group.category, hits };
-  }
-  return best;
+let out=[];
+const ashby=split(process.env.ASHBY_BOARDS||'aiprise,ontic,sarvam');
+for(const board of ashby){try{const d=await getJson(`https://api.ashbyhq.com/posting-api/job-board/${encodeURIComponent(board)}?includeCompensation=true`);for(const j of (d.jobs||[])){const location=j.location||'';if(!india(location))continue;const applyUrl=j.applyUrl||j.jobUrl;if(!applyUrl)continue;const job=makeJob({title:j.title,company:j.companyName||board,location,applyUrl,source:'Ashby',publishedAt:j.publishedAt,description:j.descriptionHtml||j.description||''});if(job)out.push(job);}}catch(e){console.log('Ashby',board,e.message)}}
+
+const gh=split(process.env.GREENHOUSE_BOARDS);
+for(const board of gh){try{const d=await getJson(`https://boards-api.greenhouse.io/v1/boards/${encodeURIComponent(board)}/jobs?content=true`);for(const j of (d.jobs||[])){const location=j.location?.name||'';if(!india(location))continue;const applyUrl=j.absolute_url;if(!applyUrl)continue;const job=makeJob({title:j.title,company:board,location,applyUrl,source:'Greenhouse',publishedAt:j.updated_at,description:j.content||''});if(job)out.push(job);}}catch(e){console.log('Greenhouse',board,e.message)}}
+
+if(process.env.ADZUNA_APP_ID&&process.env.ADZUNA_APP_KEY){try{const url=`https://api.adzuna.com/v1/api/jobs/in/search/1?app_id=${encodeURIComponent(process.env.ADZUNA_APP_ID)}&app_key=${encodeURIComponent(process.env.ADZUNA_APP_KEY)}&results_per_page=50&content-type=application/json&where=India`;const d=await getJson(url);for(const j of (d.results||[])){const location=j.location?.display_name||'India';const applyUrl=j.redirect_url;if(!applyUrl)continue;const job=makeJob({title:j.title,company:j.company?.display_name||'Adzuna',location,applyUrl,source:'Adzuna',publishedAt:j.created,description:j.description||''});if(job)out.push(job);}}catch(e){console.log('Adzuna',e.message)}}
+
+const map=new Map((previous.jobs||[]).map(j=>[j.id,j]));
+for(const j of out){const old=map.get(j.id);if(old)j.discoveredAt=old.discoveredAt;map.set(j.id,j)}
+const jobs=[...map.values()].sort((a,b)=>b.score-a.score || String(b.publishedAt).localeCompare(String(a.publishedAt))).slice(0,500);
+const newJobs=out.filter(j=>!(previous.jobs||[]).some(p=>p.id===j.id) && j.score>=50).sort((a,b)=>b.score-a.score);
+await fs.writeFile(jobsPath,JSON.stringify({updatedAt:new Date().toISOString(),jobs},null,2));
+console.log(`Collected ${out.length}; new matching ${newJobs.length}`);
+
+function escapeHtml(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+async function telegram(){
+  const token=process.env.TELEGRAM_BOT_TOKEN;
+  if(!token||!newJobs.length){console.log('Telegram skipped');return;}
+  const chatId=process.env.TELEGRAM_CHAT_ID||null;
+  if(!chatId){console.log('Telegram skipped: TELEGRAM_CHAT_ID not set');return;}
+  const top=newJobs.slice(0,10);
+  const cityCounts=new Map(),roleCounts=new Map();
+  for(const j of newJobs){cityCounts.set(j.cityCategory,(cityCounts.get(j.cityCategory)||0)+1);roleCounts.set(j.roleCategory,(roleCounts.get(j.roleCategory)||0)+1)}
+  const citySummary=[...cityCounts].sort((a,b)=>b[1]-a[1]).map(([k,v])=>`${escapeHtml(k)}: ${v}`).join(' • ');
+  const roleSummary=[...roleCounts].sort((a,b)=>b[1]-a[1]).map(([k,v])=>`${escapeHtml(k)}: ${v}`).join(' • ');
+  const lines=top.map((j,i)=>`<b>${i+1}. ${escapeHtml(j.title)}</b>\n${escapeHtml(j.company)} • ${escapeHtml(j.cityCategory)} • ${escapeHtml(j.roleCategory)}\nMatch: ${j.score}%\n<a href="${escapeHtml(j.applyUrl)}">Apply Now</a>`).join('\n\n');
+  const body=`🔔 <b>New jobs are available to apply!</b>\n\n<b>${newJobs.length}</b> new role-matched job(s).\n\n<b>By city:</b> ${citySummary}\n<b>By role:</b> ${roleSummary}\n\n${lines}`;
+  const url=`https://api.telegram.org/bot${encodeURIComponent(token)}/sendMessage`;
+  const r=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({chat_id:chatId,text:body,parse_mode:'HTML',disable_web_page_preview:true})});
+  console.log('Telegram',r.status,await r.text());
 }
-
-function scoreJob(j) {
-  const text = norm(`${j.title} ${j.description} ${j.location}`);
-  const role = classifyRole(j.title, j.description);
-  if (!role) return { score: 0, category: null };
-  const skillHits = skills.filter(s => text.includes(s));
-  let score = Math.min(60, skillHits.length * 8);
-  score += Math.min(25, role.hits.length * 12);
-  const exp = experienceFit(j.title, j.description);
-  score += exp.fresherSignal ? 15 : 5;
-  return {
-    score: Math.min(100, Math.round(score)),
-    category: role.category,
-    skills: skillHits.slice(0, 8),
-    fresherSignal: Boolean(exp.fresherSignal)
-  };
-}
-
-async function getJson(url) {
-  const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), 20000);
-  try {
-    const r = await fetch(url, {
-      signal: controller.signal,
-      headers: { 'user-agent': 'JobPulse/3.0 (2026 fresher job matching)' }
-    });
-    if (!r.ok) throw new Error(`${r.status} ${url}`);
-    return await r.json();
-  } finally {
-    clearTimeout(timer);
-  }
-}
-
-const out = [];
-const errors = [];
-
-function addJob({ title, company, location, applyUrl, source, description, publishedAt }) {
-  if (!title || !applyUrl || !india(location)) return;
-  const exp = experienceFit(title, description);
-  if (!exp.eligible) return;
-  const fit = scoreJob({ title, description, location });
-  if (!fit.category || fit.score < 35) return;
-  out.push({
-    id: hash(applyUrl), title, company: company || 'Unknown company', location,
-    applyUrl, source, category: fit.category, publishedAt: publishedAt || null,
-    discoveredAt: publishedAt || new Date().toISOString(), score: fit.score,
-    matchLevel: fit.score >= 75 ? 'Apply First' : fit.score >= 55 ? 'Good Match' : 'Possible Match',
-    fresherFit: exp.fresherSignal ? 'Explicit fresher/graduate signal' : 'No experience requirement detected',
-    batchFit: profile.graduationBatch, skills: fit.skills
-  });
-}
-
-const ashby = split(process.env.ASHBY_BOARDS || 'aiprise,ontic,sarvam');
-for (const board of ashby) {
-  try {
-    const d = await getJson(`https://api.ashbyhq.com/posting-api/job-board/${encodeURIComponent(board)}?includeCompensation=true`);
-    for (const j of (d.jobs || [])) addJob({
-      title: j.title, company: j.companyName || board, location: j.location || '',
-      applyUrl: j.applyUrl || j.jobUrl, source: 'Ashby',
-      description: j.descriptionHtml || j.description || '', publishedAt: j.publishedAt || null
-    });
-  } catch (e) {
-    errors.push(`Ashby ${board}: ${e.message}`);
-    console.log(`Ashby ${board}: ${e.message}`);
-  }
-}
-
-const gh = split(process.env.GREENHOUSE_BOARDS);
-for (const board of gh) {
-  try {
-    const d = await getJson(`https://boards-api.greenhouse.io/v1/boards/${encodeURIComponent(board)}/jobs?content=true`);
-    for (const j of (d.jobs || [])) addJob({
-      title: j.title, company: board, location: j.location?.name || '',
-      applyUrl: j.absolute_url, source: 'Greenhouse', description: j.content || '',
-      publishedAt: j.updated_at || null
-    });
-  } catch (e) {
-    errors.push(`Greenhouse ${board}: ${e.message}`);
-    console.log(`Greenhouse ${board}: ${e.message}`);
-  }
-}
-
-if (process.env.ADZUNA_APP_ID && process.env.ADZUNA_APP_KEY) {
-  const searches = [
-    'data analyst fresher', 'data engineer fresher', 'data scientist fresher',
-    'software engineer fresher', 'software developer fresher', 'python developer fresher',
-    'machine learning engineer fresher'
-  ];
-  for (const what of searches) {
-    try {
-      const url = `https://api.adzuna.com/v1/api/jobs/in/search/1?app_id=${encodeURIComponent(process.env.ADZUNA_APP_ID)}&app_key=${encodeURIComponent(process.env.ADZUNA_APP_KEY)}&results_per_page=50&content-type=application/json&where=India&what=${encodeURIComponent(what)}`;
-      const d = await getJson(url);
-      for (const j of (d.results || [])) addJob({
-        title: j.title, company: j.company?.display_name || 'Adzuna',
-        location: j.location?.display_name || 'India', applyUrl: j.redirect_url,
-        source: 'Adzuna', description: j.description || '', publishedAt: j.created || null
-      });
-    } catch (e) {
-      errors.push(`Adzuna ${what}: ${e.message}`);
-      console.log(`Adzuna ${what}: ${e.message}`);
-    }
-  }
-}
-
-const unique = new Map();
-for (const j of out) {
-  if (!unique.has(j.id) || j.score > unique.get(j.id).score) unique.set(j.id, j);
-}
-
-const previousJobs = previous.jobs || [];
-const previousMap = new Map(previousJobs.map(j => [j.id, j]));
-for (const j of unique.values()) {
-  const old = previousMap.get(j.id);
-  if (old) j.discoveredAt = old.discoveredAt;
-}
-
-// If every live source failed or returned nothing, preserve the previous data
-// instead of replacing a working dashboard with an empty list.
-if (unique.size === 0 && previousJobs.length > 0) {
-  console.log(`No live jobs collected. Preserving ${previousJobs.length} existing jobs.`);
-  if (errors.length) console.log(`Sources with errors: ${errors.length}`);
-  process.exit(0);
-}
-
-const jobs = [...unique.values()]
-  .sort((a, b) => b.score - a.score || String(b.publishedAt).localeCompare(String(a.publishedAt)))
-  .slice(0, 500);
-
-const counts = {};
-for (const j of jobs) counts[j.category] = (counts[j.category] || 0) + 1;
-
-await fs.writeFile(jobsPath, JSON.stringify({
-  updatedAt: new Date().toISOString(),
-  filters: {
-    graduationBatch: profile.graduationBatch,
-    experienceLevel: profile.experienceLevel,
-    targetCategories: roleGroups.map(x => x.category),
-    excluded: ['internships', 'senior/experienced roles']
-  },
-  counts,
-  jobs
-}, null, 2));
-
-console.log(`Collected ${jobs.length} fresher-fit jobs.`);
-console.log('By category:', JSON.stringify(counts));
-if (errors.length) console.log(`Sources with errors: ${errors.length}`);
+await telegram();
