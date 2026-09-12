@@ -1,0 +1,42 @@
+name: Refresh jobs and Telegram alerts
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Collect jobs and send Telegram alert if needed
+        env:
+          ASHBY_BOARDS: ${{ secrets.ASHBY_BOARDS }}
+          GREENHOUSE_BOARDS: ${{ secrets.GREENHOUSE_BOARDS }}
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: node scripts/collector.mjs
+
+      - name: Commit updated job data
+        run: |
+          git config user.name "jobpulse-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add jobs.json
+          git diff --cached --quiet || git commit -m "Refresh job listings"
+          git push
