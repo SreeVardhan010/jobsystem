@@ -1,1 +1,1268 @@
-{"updatedAt":null,"jobs":[]}
+{
+  "updatedAt": "2026-09-12T20:58:22.834Z",
+  "jobs": [
+    {
+      "id": "a4fafd088b0a7be7",
+      "title": "Software Engineer I (Bangalore, India)",
+      "company": "aiprise",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/aiprise/3763c791-a387-4078-9ca4-00cbfbf9b1a6/application",
+      "source": "Ashby",
+      "publishedAt": "2026-08-24T19:35:25.230+00:00",
+      "discoveredAt": "2026-08-24T19:35:25.230+00:00",
+      "score": 67,
+      "matchLevel": "Good Match",
+      "roleCategory": "Software Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "Python",
+        "Java",
+        "C",
+        "SQL",
+        "MongoDB",
+        "Git",
+        "Kubernetes"
+      ]
+    },
+    {
+      "id": "3cbf137c94c138c4",
+      "title": "Software Engineer II (Bangalore, India)",
+      "company": "aiprise",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/aiprise/02112df8-70fa-4133-a860-151b5f585ed9/application",
+      "source": "Ashby",
+      "publishedAt": "2026-08-24T19:32:40.453+00:00",
+      "discoveredAt": "2026-08-24T19:32:40.453+00:00",
+      "score": 67,
+      "matchLevel": "Good Match",
+      "roleCategory": "Software Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "Python",
+        "Java",
+        "C",
+        "SQL",
+        "MongoDB",
+        "Git",
+        "Kubernetes"
+      ]
+    },
+    {
+      "id": "86fa977de4a1cfbb",
+      "title": "Software Engineer III (Bangalore, India)",
+      "company": "aiprise",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/aiprise/e7890d9f-8e1f-48a0-92be-071a282e7fe8/application",
+      "source": "Ashby",
+      "publishedAt": "2026-08-24T16:05:20.022+00:00",
+      "discoveredAt": "2026-08-24T16:05:20.022+00:00",
+      "score": 67,
+      "matchLevel": "Good Match",
+      "roleCategory": "Software Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "Python",
+        "Java",
+        "C",
+        "SQL",
+        "MongoDB",
+        "Git",
+        "Kubernetes"
+      ]
+    },
+    {
+      "id": "55605eb9a4698ceb",
+      "title": "Embedded Infrastructure Engineer, Chanakya",
+      "company": "sarvam",
+      "location": "Delhi",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/b2201b5e-1e96-497a-962c-bca1768f75fd/application",
+      "source": "Ashby",
+      "publishedAt": "2026-04-17T12:01:22.644+00:00",
+      "discoveredAt": "2026-04-17T12:01:22.644+00:00",
+      "score": 67,
+      "matchLevel": "Good Match",
+      "roleCategory": "Data Scientist",
+      "cityCategory": "Delhi",
+      "skills": [
+        "Python",
+        "C",
+        "SQL",
+        "MongoDB",
+        "Apache Spark",
+        "Apache Kafka",
+        "Kubernetes"
+      ]
+    },
+    {
+      "id": "9111a37d70262362",
+      "title": "DevOps Engineer",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/d2d593e6-be5a-4431-b1fa-86f18d1c7edf/application",
+      "source": "Ashby",
+      "publishedAt": "2026-08-28T06:52:14.577+00:00",
+      "discoveredAt": "2026-08-28T06:52:14.577+00:00",
+      "score": 53,
+      "matchLevel": "Good Match",
+      "roleCategory": "Software Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "Python",
+        "C",
+        "Git",
+        "GitHub",
+        "Kubernetes"
+      ]
+    },
+    {
+      "id": "d5a2dab699187ed4",
+      "title": "Senior Software Engineer - UI",
+      "company": "ontic",
+      "location": "Noida, India",
+      "applyUrl": "https://jobs.ashbyhq.com/ontic/800142fe-93e2-42fd-9af4-0084ea813a41/application",
+      "source": "Ashby",
+      "publishedAt": "2026-07-15T08:39:28.874+00:00",
+      "discoveredAt": "2026-07-15T08:39:28.874+00:00",
+      "score": 53,
+      "matchLevel": "Good Match",
+      "roleCategory": "Software Engineer",
+      "cityCategory": "Noida",
+      "skills": [
+        "Java",
+        "C",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    },
+    {
+      "id": "26b44790155b5eed",
+      "title": "Staff Engineer - UI",
+      "company": "ontic",
+      "location": "Pune, India",
+      "applyUrl": "https://jobs.ashbyhq.com/ontic/84966594-9881-45f9-bede-af54a0118a87/application",
+      "source": "Ashby",
+      "publishedAt": "2026-06-29T14:35:06.912+00:00",
+      "discoveredAt": "2026-06-29T14:35:06.912+00:00",
+      "score": 53,
+      "matchLevel": "Good Match",
+      "roleCategory": "Software Engineer",
+      "cityCategory": "Pune",
+      "skills": [
+        "Java",
+        "C",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    },
+    {
+      "id": "a25dccb6f985ecc7",
+      "title": "Staff Engineer - UI",
+      "company": "ontic",
+      "location": "Noida, India",
+      "applyUrl": "https://jobs.ashbyhq.com/ontic/e3c570d0-688d-4385-99fd-9f5fb6643e61/application",
+      "source": "Ashby",
+      "publishedAt": "2026-06-17T05:53:24.530+00:00",
+      "discoveredAt": "2026-06-17T05:53:24.530+00:00",
+      "score": 53,
+      "matchLevel": "Good Match",
+      "roleCategory": "Software Engineer",
+      "cityCategory": "Noida",
+      "skills": [
+        "Java",
+        "C",
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    },
+    {
+      "id": "3699c9293b2eaf4c",
+      "title": "Backend Engineer - Studio Media Platform",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/b07dfd8a-208d-43c1-a811-f1c447df26f9/application",
+      "source": "Ashby",
+      "publishedAt": "2026-06-01T17:27:22.296+00:00",
+      "discoveredAt": "2026-06-01T17:27:22.296+00:00",
+      "score": 53,
+      "matchLevel": "Good Match",
+      "roleCategory": "Backend Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "Python",
+        "C",
+        "SQL",
+        "librosa",
+        "Kubernetes"
+      ]
+    },
+    {
+      "id": "cde86a2178893ede",
+      "title": "ML Ops Engineer, Chanakya",
+      "company": "sarvam",
+      "location": "Delhi",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/e7f783e8-6378-4158-97d5-48a397a91698/application",
+      "source": "Ashby",
+      "publishedAt": "2026-04-17T20:08:16.547+00:00",
+      "discoveredAt": "2026-04-17T20:08:16.547+00:00",
+      "score": 53,
+      "matchLevel": "Good Match",
+      "roleCategory": "Machine Learning Engineer",
+      "cityCategory": "Delhi",
+      "skills": [
+        "Python",
+        "C",
+        "Git",
+        "GitHub",
+        "Kubernetes"
+      ]
+    },
+    {
+      "id": "d0ae298772ad6761",
+      "title": "Frontend Engineer, Vision ",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/de7eba10-6fff-4fa3-8d70-526f2cf58eb7/application",
+      "source": "Ashby",
+      "publishedAt": "2026-08-18T11:01:10.604+00:00",
+      "discoveredAt": "2026-08-18T11:01:10.604+00:00",
+      "score": 47,
+      "matchLevel": "Stretch",
+      "roleCategory": "Machine Learning Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "Python",
+        "C",
+        "SQL",
+        "Kubernetes"
+      ]
+    },
+    {
+      "id": "11c19d3f5c59ddd4",
+      "title": "Senior Backend Engineer, Vision ",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/3652221b-d408-486b-9ad1-ab073aaf1071/application",
+      "source": "Ashby",
+      "publishedAt": "2026-08-18T10:55:40.245+00:00",
+      "discoveredAt": "2026-08-18T10:55:40.245+00:00",
+      "score": 47,
+      "matchLevel": "Stretch",
+      "roleCategory": "Backend Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "Python",
+        "C",
+        "SQL",
+        "Kubernetes"
+      ]
+    },
+    {
+      "id": "b1a5bfcf4f152a5c",
+      "title": "Software Engineer",
+      "company": "ontic",
+      "location": "Noida / Pune",
+      "applyUrl": "https://jobs.ashbyhq.com/ontic/0426253f-e03c-4d57-be4c-ea02fdab7097/application",
+      "source": "Ashby",
+      "publishedAt": "2026-07-13T18:34:33.751+00:00",
+      "discoveredAt": "2026-07-13T18:34:33.751+00:00",
+      "score": 47,
+      "matchLevel": "Stretch",
+      "roleCategory": "Software Engineer",
+      "cityCategory": "Pune",
+      "skills": [
+        "Java",
+        "C",
+        "MongoDB",
+        "Kubernetes"
+      ]
+    },
+    {
+      "id": "d142822917f5b84f",
+      "title": "Embedded Data Scientist, Chanakya",
+      "company": "sarvam",
+      "location": "Delhi",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/dc047f4f-97be-4bb3-a9f1-cebbfc4de3e6/application",
+      "source": "Ashby",
+      "publishedAt": "2026-04-17T11:59:15.600+00:00",
+      "discoveredAt": "2026-04-17T11:59:15.600+00:00",
+      "score": 47,
+      "matchLevel": "Stretch",
+      "roleCategory": "Data Scientist",
+      "cityCategory": "Delhi",
+      "skills": [
+        "Python",
+        "C",
+        "Pandas",
+        "NumPy"
+      ]
+    },
+    {
+      "id": "b08894dcc98c5170",
+      "title": "Data Scientist - Evaluations, Chanakya",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/7c42207a-bb56-413c-839f-9ad692df840e/application",
+      "source": "Ashby",
+      "publishedAt": "2026-04-17T11:56:48.684+00:00",
+      "discoveredAt": "2026-04-17T11:56:48.684+00:00",
+      "score": 47,
+      "matchLevel": "Stretch",
+      "roleCategory": "Data Scientist",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "Python",
+        "C",
+        "Pandas",
+        "NumPy"
+      ]
+    },
+    {
+      "id": "9def6ab67e86a222",
+      "title": "Backend Engineer, Chanakya",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/86ae80f8-b7eb-43a4-afde-fef58e77e23e/application",
+      "source": "Ashby",
+      "publishedAt": "2026-04-17T11:53:51.772+00:00",
+      "discoveredAt": "2026-04-17T11:53:51.772+00:00",
+      "score": 47,
+      "matchLevel": "Stretch",
+      "roleCategory": "Backend Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "Python",
+        "C",
+        "SQL",
+        "Kubernetes"
+      ]
+    },
+    {
+      "id": "0ab00f9c2a1d8cf7",
+      "title": "Platform Engineer - AI Infrastructure",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/fcb15601-6440-41f7-aa79-b9992057a4b2/application",
+      "source": "Ashby",
+      "publishedAt": "2026-06-29T08:51:22.501+00:00",
+      "discoveredAt": "2026-06-29T08:51:22.501+00:00",
+      "score": 40,
+      "matchLevel": "Stretch",
+      "roleCategory": "Machine Learning Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "Python",
+        "C",
+        "Kubernetes"
+      ]
+    },
+    {
+      "id": "cce6a3c5cee230fe",
+      "title": "R&D Analytics Engineer ",
+      "company": "ontic",
+      "location": "Remote, United States",
+      "applyUrl": "https://jobs.ashbyhq.com/ontic/27d32707-54e2-47be-be62-376df6d2b0f3/application",
+      "source": "Ashby",
+      "publishedAt": "2026-09-02T11:17:25.353+00:00",
+      "discoveredAt": "2026-09-02T11:17:25.353+00:00",
+      "score": 33,
+      "matchLevel": "Stretch",
+      "roleCategory": "Data Engineer",
+      "cityCategory": "Remote India",
+      "skills": [
+        "C",
+        "SQL"
+      ]
+    },
+    {
+      "id": "0add075f2c23b267",
+      "title": "Developer Relations Engineer - Developer Advocate",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/730c1766-ad62-4d5d-aa75-b5b0e03409aa/application",
+      "source": "Ashby",
+      "publishedAt": "2026-08-05T07:24:55.212+00:00",
+      "discoveredAt": "2026-08-05T07:24:55.212+00:00",
+      "score": 33,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "Python",
+        "C"
+      ]
+    },
+    {
+      "id": "8b8c0ac1400eff82",
+      "title": "Solution Architect",
+      "company": "sarvam",
+      "location": "Delhi",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/0632eb6b-e99c-4e31-9a6a-c3bd36fc8512/application",
+      "source": "Ashby",
+      "publishedAt": "2026-05-07T06:47:11.483+00:00",
+      "discoveredAt": "2026-05-07T06:47:11.483+00:00",
+      "score": 33,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Delhi",
+      "skills": [
+        "C",
+        "Git"
+      ]
+    },
+    {
+      "id": "0db4eecc4800d881",
+      "title": "Staff Data Engineer",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/7ee2ff5d-32a2-4b0a-9ae9-117ba8b626d1/application",
+      "source": "Ashby",
+      "publishedAt": "2026-05-05T09:41:06.965+00:00",
+      "discoveredAt": "2026-05-05T09:41:06.965+00:00",
+      "score": 33,
+      "matchLevel": "Stretch",
+      "roleCategory": "Data Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C",
+        "SQL"
+      ]
+    },
+    {
+      "id": "401c6c84260ca00e",
+      "title": "Frontend Engineer, Chanakya",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/10a352d0-a65b-4599-8998-e09deef34349/application",
+      "source": "Ashby",
+      "publishedAt": "2026-04-17T20:10:41.942+00:00",
+      "discoveredAt": "2026-04-17T20:10:41.942+00:00",
+      "score": 33,
+      "matchLevel": "Stretch",
+      "roleCategory": "Backend Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C",
+        "CSS"
+      ]
+    },
+    {
+      "id": "bee78eede4f488e2",
+      "title": "Senior Frontend Engineer - Arya",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/5fafff38-0438-4a6b-afa1-bfcb750b3c9b/application",
+      "source": "Ashby",
+      "publishedAt": "2026-08-10T11:12:15.495+00:00",
+      "discoveredAt": "2026-08-10T11:12:15.495+00:00",
+      "score": 27,
+      "matchLevel": "Stretch",
+      "roleCategory": "Backend Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C",
+        "CSS",
+        "Git",
+        "Kubernetes"
+      ]
+    },
+    {
+      "id": "6ffd5562046ae4a8",
+      "title": "Staff Engineer, API Platform",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/48b2c236-a7e7-475d-b98b-4eb942e85dc7/application",
+      "source": "Ashby",
+      "publishedAt": "2026-05-21T06:34:24.832+00:00",
+      "discoveredAt": "2026-05-21T06:34:24.832+00:00",
+      "score": 27,
+      "matchLevel": "Stretch",
+      "roleCategory": "Backend Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "Python",
+        "C",
+        "SQL",
+        "Kubernetes"
+      ]
+    },
+    {
+      "id": "ae9941fe91583c73",
+      "title": "Strategy and Operations Intern ",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/6d849a05-e924-4aef-a6a4-f5e082358517/application",
+      "source": "Ashby",
+      "publishedAt": "2026-09-11T04:31:49.652+00:00",
+      "discoveredAt": "2026-09-11T04:31:49.652+00:00",
+      "score": 20,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "Python",
+        "C",
+        "SQL"
+      ]
+    },
+    {
+      "id": "59bdb4fa3cc62d12",
+      "title": "Product Manager, Model APIs",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/45986600-4da3-4e46-a204-2865392df169/application",
+      "source": "Ashby",
+      "publishedAt": "2026-08-25T10:39:32.755+00:00",
+      "discoveredAt": "2026-08-25T10:39:32.755+00:00",
+      "score": 20,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "Python",
+        "C",
+        "SQL"
+      ]
+    },
+    {
+      "id": "dab288fe8e83956b",
+      "title": "Staff Engineer - Mobile, Desktop & KMP",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/5494ecdf-373b-4eb8-839d-1bbd110e7ec9/application",
+      "source": "Ashby",
+      "publishedAt": "2026-08-19T07:04:12.010+00:00",
+      "discoveredAt": "2026-08-19T07:04:12.010+00:00",
+      "score": 20,
+      "matchLevel": "Stretch",
+      "roleCategory": "Backend Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C",
+        "TensorFlow",
+        "Linux"
+      ]
+    },
+    {
+      "id": "6c098205ee6ba5d2",
+      "title": "Infrastructure SRE - HPC",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/e1dd678f-6e25-48b4-82d8-a1a7d10a78d6/application",
+      "source": "Ashby",
+      "publishedAt": "2026-06-26T09:18:02.474+00:00",
+      "discoveredAt": "2026-06-26T09:18:02.474+00:00",
+      "score": 20,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "Python",
+        "C",
+        "Kubernetes"
+      ]
+    },
+    {
+      "id": "bd28d6238575b882",
+      "title": "IT Lead",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/8dfa8130-cfb3-4c31-8658-54260d217f86/application",
+      "source": "Ashby",
+      "publishedAt": "2026-06-16T09:16:12.140+00:00",
+      "discoveredAt": "2026-06-16T09:16:12.140+00:00",
+      "score": 20,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "Python",
+        "C",
+        "Linux"
+      ]
+    },
+    {
+      "id": "f69f0cd36618341f",
+      "title": "Product Designer ",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/79bb725b-83d4-400c-a207-e2b0a7ccec68/application",
+      "source": "Ashby",
+      "publishedAt": "2026-05-19T03:45:42.145+00:00",
+      "discoveredAt": "2026-05-19T03:45:42.145+00:00",
+      "score": 20,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C",
+        "SQL",
+        "Git"
+      ]
+    },
+    {
+      "id": "aa4adaee2fc09ac3",
+      "title": "Staff Engineer, Product Infrastructure",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/10f11bb2-fe15-4743-9b3f-81da6743ea6a/application",
+      "source": "Ashby",
+      "publishedAt": "2026-05-12T14:36:10.352+00:00",
+      "discoveredAt": "2026-05-12T14:36:10.352+00:00",
+      "score": 20,
+      "matchLevel": "Stretch",
+      "roleCategory": "Backend Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "Python",
+        "C",
+        "SQL"
+      ]
+    },
+    {
+      "id": "2dc5e18e52dda9e2",
+      "title": "Strategic Deployment Engineer, Chanakya",
+      "company": "sarvam",
+      "location": "Delhi",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/87d5a5af-ea7d-4b94-a0fa-81dc64e54907/application",
+      "source": "Ashby",
+      "publishedAt": "2026-04-17T20:02:28.261+00:00",
+      "discoveredAt": "2026-04-17T20:02:28.261+00:00",
+      "score": 20,
+      "matchLevel": "Stretch",
+      "roleCategory": "Machine Learning Engineer",
+      "cityCategory": "Delhi",
+      "skills": [
+        "Python",
+        "C",
+        "Linux"
+      ]
+    },
+    {
+      "id": "9d02c49a67564e72",
+      "title": "Product Manager (Models)",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/9e197c29-5164-42eb-8e74-4f691a794517/application",
+      "source": "Ashby",
+      "publishedAt": "2026-04-17T19:17:20.479+00:00",
+      "discoveredAt": "2026-04-17T19:17:20.479+00:00",
+      "score": 20,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "Python",
+        "C",
+        "SQL"
+      ]
+    },
+    {
+      "id": "0b09b6e5dffe36c6",
+      "title": "GTM & Strategy, Model API",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/2fd59d81-b766-4f54-85b3-d0eae08dbfc0/application",
+      "source": "Ashby",
+      "publishedAt": "2026-08-20T08:00:04.868+00:00",
+      "discoveredAt": "2026-08-20T08:00:04.868+00:00",
+      "score": 13,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "Python",
+        "C"
+      ]
+    },
+    {
+      "id": "cc5984bff7e70da4",
+      "title": "Agent Engineer",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/36f89b00-2010-4d23-aae3-17a2f53d9eaa/application",
+      "source": "Ashby",
+      "publishedAt": "2026-08-20T06:30:48.859+00:00",
+      "discoveredAt": "2026-08-20T06:30:48.859+00:00",
+      "score": 13,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "Python",
+        "C"
+      ]
+    },
+    {
+      "id": "7ad9119e957b6b4e",
+      "title": "Deployment Strategist",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/48c228f1-0762-4d4e-9d83-ae8f751ce19d/application",
+      "source": "Ashby",
+      "publishedAt": "2026-08-11T10:45:16.628+00:00",
+      "discoveredAt": "2026-08-11T10:45:16.628+00:00",
+      "score": 13,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C",
+        "Git"
+      ]
+    },
+    {
+      "id": "a894c0b54f71446d",
+      "title": "Product Manager – Media & Entertainment, Sarvam Studio",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/adbc090f-3aad-4b12-af36-a2f4b55c017e/application",
+      "source": "Ashby",
+      "publishedAt": "2026-07-27T21:47:19.568+00:00",
+      "discoveredAt": "2026-07-27T21:47:19.568+00:00",
+      "score": 13,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C",
+        "SQL"
+      ]
+    },
+    {
+      "id": "caf6b573274568d7",
+      "title": "Marketing Operations Manager",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/12d53c76-3b0a-4ced-8320-aa746e962648/application",
+      "source": "Ashby",
+      "publishedAt": "2026-07-05T16:33:02.400+00:00",
+      "discoveredAt": "2026-07-05T16:33:02.400+00:00",
+      "score": 13,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C",
+        "SQL"
+      ]
+    },
+    {
+      "id": "f56edbb33501db72",
+      "title": "Product Manager, Monetization & Retention",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/6390e602-7b98-4700-baa9-ced5be8b1651/application",
+      "source": "Ashby",
+      "publishedAt": "2026-05-25T10:34:28.407+00:00",
+      "discoveredAt": "2026-05-25T10:34:28.407+00:00",
+      "score": 13,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C",
+        "SQL"
+      ]
+    },
+    {
+      "id": "4903b2fbab1f681b",
+      "title": "Product Manager, Growth",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/929e2e12-7a2f-4e28-9d27-f220910b2125/application",
+      "source": "Ashby",
+      "publishedAt": "2026-05-25T10:26:47.949+00:00",
+      "discoveredAt": "2026-05-25T10:26:47.949+00:00",
+      "score": 13,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C",
+        "SQL"
+      ]
+    },
+    {
+      "id": "ac98a17d0a50165c",
+      "title": "ML Engineer (Data), Foundational Models",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/2d72a541-c805-4bd9-81cd-ac2db98611fa/application",
+      "source": "Ashby",
+      "publishedAt": "2026-05-21T07:32:34.010+00:00",
+      "discoveredAt": "2026-05-21T07:32:34.010+00:00",
+      "score": 13,
+      "matchLevel": "Stretch",
+      "roleCategory": "Machine Learning Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "Python",
+        "C"
+      ]
+    },
+    {
+      "id": "a54493d33bafba66",
+      "title": "GTM Manager On-Device AI",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/af865840-f90e-4e16-bf15-8a3a9c0b434c/application",
+      "source": "Ashby",
+      "publishedAt": "2026-05-13T11:55:38.685+00:00",
+      "discoveredAt": "2026-05-13T11:55:38.685+00:00",
+      "score": 13,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C",
+        "Git"
+      ]
+    },
+    {
+      "id": "df3b38c4f5ee2e7f",
+      "title": "Product Manager",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/c4bb3b2c-7608-4d57-8761-650b4222ac13/application",
+      "source": "Ashby",
+      "publishedAt": "2026-04-17T19:38:19.123+00:00",
+      "discoveredAt": "2026-04-17T19:38:19.123+00:00",
+      "score": 13,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C",
+        "SQL"
+      ]
+    },
+    {
+      "id": "d05b987b742fa959",
+      "title": "GTM Strategy - Chanakya",
+      "company": "sarvam",
+      "location": "Delhi",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/6e8354d0-8e75-4e31-a361-21dfd91bfdfa/application",
+      "source": "Ashby",
+      "publishedAt": "2026-09-08T08:48:19.074+00:00",
+      "discoveredAt": "2026-09-08T08:48:19.074+00:00",
+      "score": 7,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Delhi",
+      "skills": [
+        "C"
+      ]
+    },
+    {
+      "id": "d44651e48e72ac7e",
+      "title": "Head of Brand & Communications",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/51a0c7e5-7109-49e7-b552-dbe915cb3f94/application",
+      "source": "Ashby",
+      "publishedAt": "2026-08-25T13:02:15.208+00:00",
+      "discoveredAt": "2026-08-25T13:02:15.208+00:00",
+      "score": 7,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C"
+      ]
+    },
+    {
+      "id": "7d1fc9656a3df299",
+      "title": "Visual Designer",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/597119b9-ccb6-4b6e-be0e-39eb185093d0/application",
+      "source": "Ashby",
+      "publishedAt": "2026-08-25T10:27:35.312+00:00",
+      "discoveredAt": "2026-08-25T10:27:35.312+00:00",
+      "score": 7,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C"
+      ]
+    },
+    {
+      "id": "3868bc2ee18944d1",
+      "title": "Motion Designer",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/9f15eec1-96c9-440f-8baf-dcb8b3d55568/application",
+      "source": "Ashby",
+      "publishedAt": "2026-08-25T10:00:22.203+00:00",
+      "discoveredAt": "2026-08-25T10:00:22.203+00:00",
+      "score": 7,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C"
+      ]
+    },
+    {
+      "id": "a4b516957a209012",
+      "title": "Product Marketing Manager, Model API",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/bd5d2769-7dc3-47c5-9afb-c011b6d22c19/application",
+      "source": "Ashby",
+      "publishedAt": "2026-08-24T08:33:05.188+00:00",
+      "discoveredAt": "2026-08-24T08:33:05.188+00:00",
+      "score": 7,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C"
+      ]
+    },
+    {
+      "id": "832af9da0efd9e22",
+      "title": "Product Manager - Chanakya",
+      "company": "sarvam",
+      "location": "Delhi",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/c4099026-b194-4b16-8a12-c7ae1a9b51a0/application",
+      "source": "Ashby",
+      "publishedAt": "2026-08-24T03:51:58.128+00:00",
+      "discoveredAt": "2026-08-24T03:51:58.128+00:00",
+      "score": 7,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Delhi",
+      "skills": [
+        "C"
+      ]
+    },
+    {
+      "id": "9c13e58c09ef695d",
+      "title": "Senior Manager, Growth Marketing",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/17d13aaa-2faf-40de-82e5-da894ead0856/application",
+      "source": "Ashby",
+      "publishedAt": "2026-08-19T08:56:02.833+00:00",
+      "discoveredAt": "2026-08-19T08:56:02.833+00:00",
+      "score": 7,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C"
+      ]
+    },
+    {
+      "id": "547e3f0bcb79c248",
+      "title": "Technical Partner Enablement Manager",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/fcd803a8-6ffb-48fa-99f9-d7f43e6572ee/application",
+      "source": "Ashby",
+      "publishedAt": "2026-08-17T10:13:36.719+00:00",
+      "discoveredAt": "2026-08-17T10:13:36.719+00:00",
+      "score": 7,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C"
+      ]
+    },
+    {
+      "id": "4c8f06434710ae9f",
+      "title": "GTM Lead, Vision (Document Intelligence)",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/e5232e72-b037-4690-9976-38676bf9b8e0/application",
+      "source": "Ashby",
+      "publishedAt": "2026-08-14T09:27:53.567+00:00",
+      "discoveredAt": "2026-08-14T09:27:53.567+00:00",
+      "score": 7,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C"
+      ]
+    },
+    {
+      "id": "d130327f64c624a2",
+      "title": "Developer Relations Engineer  - Community Manager",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/50cc51f1-0229-460a-b60b-bf747059f034/application",
+      "source": "Ashby",
+      "publishedAt": "2026-08-05T07:19:28.872+00:00",
+      "discoveredAt": "2026-08-05T07:19:28.872+00:00",
+      "score": 7,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C"
+      ]
+    },
+    {
+      "id": "20ba6dad2dfe0bd6",
+      "title": "HR Business Partner & People O ",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/12fddb90-b98a-44bd-b9a0-76d679391618/application",
+      "source": "Ashby",
+      "publishedAt": "2026-07-28T11:48:31.819+00:00",
+      "discoveredAt": "2026-07-28T11:48:31.819+00:00",
+      "score": 7,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C"
+      ]
+    },
+    {
+      "id": "4335357df31f7e9b",
+      "title": "Business Development Representative",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/ccfc0dbf-cf76-439a-aaea-f622daae614b/application",
+      "source": "Ashby",
+      "publishedAt": "2026-07-05T16:57:50.371+00:00",
+      "discoveredAt": "2026-07-05T16:57:50.371+00:00",
+      "score": 7,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C"
+      ]
+    },
+    {
+      "id": "321c453125045123",
+      "title": "Performance Engineer, On-Device Inference",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/6ad226cd-9400-41b6-9c64-db35b7d24516/application",
+      "source": "Ashby",
+      "publishedAt": "2026-06-04T18:10:21.432+00:00",
+      "discoveredAt": "2026-06-04T18:10:21.432+00:00",
+      "score": 7,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C"
+      ]
+    },
+    {
+      "id": "73e18159a8e1a37f",
+      "title": "Senior Performance Engineer, Intel Stack",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/44ba25a3-d262-429e-ad5b-c8711565f6e3/application",
+      "source": "Ashby",
+      "publishedAt": "2026-06-04T18:02:40.346+00:00",
+      "discoveredAt": "2026-06-04T18:02:40.346+00:00",
+      "score": 7,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C"
+      ]
+    },
+    {
+      "id": "d88a38016ae780df",
+      "title": "Product Marketing Manager",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/ae56bf44-44fd-4966-afe0-eeaceb3bfb20/application",
+      "source": "Ashby",
+      "publishedAt": "2026-06-03T17:13:12.117+00:00",
+      "discoveredAt": "2026-06-03T17:13:12.117+00:00",
+      "score": 7,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C"
+      ]
+    },
+    {
+      "id": "88e1be1eae9296ef",
+      "title": "ML Researcher, Foundational Models",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/2dcb062d-e42b-408d-be15-59ddde900984/application",
+      "source": "Ashby",
+      "publishedAt": "2026-05-21T07:19:23.513+00:00",
+      "discoveredAt": "2026-05-21T07:19:23.513+00:00",
+      "score": 7,
+      "matchLevel": "Stretch",
+      "roleCategory": "Machine Learning Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C"
+      ]
+    },
+    {
+      "id": "f45e20956007e33e",
+      "title": "Solution Specialist",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/f3376204-1c2d-42a8-bf4a-1a0eec2fbc3c/application",
+      "source": "Ashby",
+      "publishedAt": "2026-05-20T08:44:45.357+00:00",
+      "discoveredAt": "2026-05-20T08:44:45.357+00:00",
+      "score": 7,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C"
+      ]
+    },
+    {
+      "id": "9f0c2415700fce0c",
+      "title": "Product Manager On-Device & Edge AI",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/f462051e-ec76-45cf-96c5-e0192dd4dcc6/application",
+      "source": "Ashby",
+      "publishedAt": "2026-05-12T12:05:29.021+00:00",
+      "discoveredAt": "2026-05-12T12:05:29.021+00:00",
+      "score": 7,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C"
+      ]
+    },
+    {
+      "id": "6ffb2a632f5a21e2",
+      "title": "Account Manager",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/a0188ff6-c03d-41e2-bf11-78678b2c794d/application",
+      "source": "Ashby",
+      "publishedAt": "2026-05-07T08:21:49.923+00:00",
+      "discoveredAt": "2026-05-07T08:21:49.923+00:00",
+      "score": 7,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C"
+      ]
+    },
+    {
+      "id": "66184d32f5c2dc83",
+      "title": "Principal Solution Architect",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/fdf3a5c1-64b6-4c55-b3ed-a940f3835b29/application",
+      "source": "Ashby",
+      "publishedAt": "2026-05-07T06:51:02.667+00:00",
+      "discoveredAt": "2026-05-07T06:51:02.667+00:00",
+      "score": 7,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C"
+      ]
+    },
+    {
+      "id": "0203902cdff7cc4a",
+      "title": "Engagement Principal, Chanakya",
+      "company": "sarvam",
+      "location": "Delhi",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/3e3b1ad5-99bb-42e6-9093-8953b89e552b/application",
+      "source": "Ashby",
+      "publishedAt": "2026-04-17T20:10:15.854+00:00",
+      "discoveredAt": "2026-04-17T20:10:15.854+00:00",
+      "score": 7,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Delhi",
+      "skills": [
+        "C"
+      ]
+    },
+    {
+      "id": "c2baadd0546e0252",
+      "title": "Researcher, Vision",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/255816b4-c44d-481c-a093-73ae114d1952/application",
+      "source": "Ashby",
+      "publishedAt": "2026-04-17T20:00:54.275+00:00",
+      "discoveredAt": "2026-04-17T20:00:54.275+00:00",
+      "score": 7,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C"
+      ]
+    },
+    {
+      "id": "8999e323ab942815",
+      "title": "Principal Security Engineer",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/2cb7b4f9-4b09-450d-945a-78a9d597c734/application",
+      "source": "Ashby",
+      "publishedAt": "2026-04-17T19:28:18.358+00:00",
+      "discoveredAt": "2026-04-17T19:28:18.358+00:00",
+      "score": 7,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C"
+      ]
+    },
+    {
+      "id": "ffc9e3dc87a69575",
+      "title": "Partnerships & Alliances Lead (GSIs) - India",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/c770b621-363c-46ba-ac24-8407ecee4af5/application",
+      "source": "Ashby",
+      "publishedAt": "2026-04-17T19:19:55.639+00:00",
+      "discoveredAt": "2026-04-17T19:19:55.639+00:00",
+      "score": 7,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C"
+      ]
+    },
+    {
+      "id": "55cdd5229e8e2213",
+      "title": "Engagement Manager, Chanakya",
+      "company": "sarvam",
+      "location": "Delhi",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/c0406fe0-c8c0-44aa-aa3e-b879f2bf1049/application",
+      "source": "Ashby",
+      "publishedAt": "2026-04-17T11:46:39.214+00:00",
+      "discoveredAt": "2026-04-17T11:46:39.214+00:00",
+      "score": 7,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Delhi",
+      "skills": [
+        "C"
+      ]
+    }
+  ]
+}
