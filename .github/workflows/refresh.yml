@@ -1,4 +1,4 @@
-name: Refresh jobs and Telegram alerts
+name: Refresh 2026 fresher jobs
 
 on:
   schedule:
@@ -8,35 +8,56 @@ on:
 permissions:
   contents: write
 
+# Prevent two refresh runs of this workflow from pushing at the same time.
+concurrency:
+  group: jobpulse-refresh
+  cancel-in-progress: false
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
-          node-version: 20
+          node-version: 24
 
-      - name: Collect jobs and send Telegram alert if needed
+      - name: Collect 2026 fresher jobs
         env:
           ASHBY_BOARDS: ${{ secrets.ASHBY_BOARDS }}
           GREENHOUSE_BOARDS: ${{ secrets.GREENHOUSE_BOARDS }}
           ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
           ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: node scripts/collector.mjs
 
-      - name: Commit updated job data
+      - name: Commit updated job data safely
+        shell: bash
         run: |
+          set -euo pipefail
           git config user.name "jobpulse-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # Keep the freshly collected file safe while we synchronize with main.
+          cp jobs.json /tmp/jobpulse-jobs.json
+
+          # Rebase is unnecessary here because jobs.json is generated data.
+          # Synchronize with the newest remote commit, then put the generated data back.
+          git fetch origin main
+          git reset --hard origin/main
+          cp /tmp/jobpulse-jobs.json jobs.json
+
           git add jobs.json
-          git diff --cached --quiet || git commit -m "Refresh job listings"
-          git push
+          if git diff --cached --quiet; then
+            echo "No job-data changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Refresh 2026 fresher job listings"
+          git push origin HEAD:main
