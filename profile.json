@@ -1,6 +1,40 @@
 {
-  "name":"SreeVardhan Capilai",
-  "skills":["Python","Java","C","SQL","MongoDB","XGBoost","scikit-learn","TensorFlow","Apache Spark","Apache Kafka","Pandas","NumPy","Matplotlib","Seaborn","librosa","HTML","CSS","JavaScript","Git","GitHub","Linux","Kubernetes"],
-  "roles":["Software Engineer","Backend Engineer","Data Engineer","Machine Learning Engineer","Data Scientist","Full Stack Engineer","Python Developer"],
-  "locations":["India","Bengaluru","Bangalore","Hyderabad","Chennai","Pune","Gurgaon","Gurugram","Mumbai","Noida","Delhi"]
+  "name": "SreeVardhan Capilai",
+  "graduationBatch": "2026",
+  "experienceLevel": "fresher",
+  "skills": [
+    "Python", "Java", "C", "SQL", "MongoDB", "XGBoost", "scikit-learn", "TensorFlow",
+    "Apache Spark", "Apache Kafka", "Pandas", "NumPy", "Matplotlib", "Seaborn", "librosa",
+    "HTML", "CSS", "JavaScript", "Git", "GitHub", "Linux", "Kubernetes"
+  ],
+  "targetRoles": {
+    "Software Development": [
+      "Software Engineer", "Software Developer", "Associate Software Engineer", "SDE", "SDE I",
+      "Backend Engineer", "Backend Developer", "Python Developer", "Java Developer",
+      "Full Stack Engineer", "Full Stack Developer", "Graduate Software Engineer",
+      "Trainee Software Engineer", "Graduate Engineer Trainee"
+    ],
+    "Data Engineering": [
+      "Data Engineer", "Junior Data Engineer", "Associate Data Engineer", "Data Engineering",
+      "ETL Developer", "Analytics Engineer", "Data Platform Engineer", "Big Data Engineer",
+      "Data Pipeline Engineer"
+    ],
+    "Data Analytics": [
+      "Data Analyst", "Junior Data Analyst", "Associate Data Analyst", "Business Data Analyst",
+      "Reporting Analyst", "BI Analyst", "Business Intelligence Analyst", "Analytics Analyst",
+      "Data Analytics"
+    ],
+    "Data Science": [
+      "Data Scientist", "Junior Data Scientist", "Associate Data Scientist", "Data Science",
+      "Applied Data Scientist", "Machine Learning Scientist", "Applied Scientist"
+    ],
+    "Machine Learning": [
+      "Machine Learning Engineer", "ML Engineer", "Junior ML Engineer", "Associate ML Engineer",
+      "Applied ML Engineer", "AI Engineer", "AI/ML Engineer"
+    ]
+  },
+  "locations": [
+    "India", "Bengaluru", "Bangalore", "Hyderabad", "Chennai", "Pune", "Gurgaon", "Gurugram",
+    "Mumbai", "Noida", "Delhi", "Kolkata", "Ahmedabad", "Kochi", "Remote"
+  ]
 }
