@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-14T06:48:16.533Z",
+  "updatedAt": "2026-09-14T13:43:06.383Z",
   "jobs": [
     {
       "id": "3f048be46a11cf60",
@@ -1166,6 +1166,40 @@
       "score": 5,
       "matchLevel": "Stretch",
       "roleCategory": "Machine Learning Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C"
+      ]
+    },
+    {
+      "id": "45009a481e8211ab",
+      "title": "Software Development Engineer I",
+      "company": "safe",
+      "location": "New Delhi",
+      "applyUrl": "https://jobs.lever.co/safe/6c2f5678-38a5-40ac-a0d7-f5274a1fd620",
+      "source": "Lever",
+      "publishedAt": "2025-09-30T08:25:11.687Z",
+      "discoveredAt": "2025-09-30T08:25:11.687Z",
+      "score": 5,
+      "matchLevel": "Stretch",
+      "roleCategory": "Software Engineer",
+      "cityCategory": "Delhi",
+      "skills": [
+        "C"
+      ]
+    },
+    {
+      "id": "37ac8839d853d02c",
+      "title": "Software Development Engineer I",
+      "company": "safe",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.lever.co/safe/91e23536-2a94-496c-9c74-9dbfd815923f",
+      "source": "Lever",
+      "publishedAt": "2024-09-03T12:04:03.786Z",
+      "discoveredAt": "2024-09-03T12:04:03.786Z",
+      "score": 5,
+      "matchLevel": "Stretch",
+      "roleCategory": "Software Engineer",
       "cityCategory": "Bengaluru",
       "skills": [
         "C"
