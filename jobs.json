@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T07:20:47.918Z",
+  "updatedAt": "2026-09-16T12:44:34.159Z",
   "jobs": [
     {
       "id": "3f048be46a11cf60",
@@ -576,6 +576,23 @@
         "Git",
         "GitHub",
         "Kubernetes"
+      ]
+    },
+    {
+      "id": "2e403ade292ddaa9",
+      "title": "Software Engineer, Backend",
+      "company": "Wisdom-AI",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/Wisdom-AI/38997748-01fd-4a16-84e9-a135fb056908/application",
+      "source": "Ashby",
+      "publishedAt": "2026-09-16T09:07:04.167+00:00",
+      "discoveredAt": "2026-09-16T09:07:04.167+00:00",
+      "score": 25,
+      "matchLevel": "Stretch",
+      "roleCategory": "Software Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C"
       ]
     },
     {
