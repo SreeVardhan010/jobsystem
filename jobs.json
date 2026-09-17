@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T03:50:46.013Z",
+  "updatedAt": "2026-09-17T09:16:17.115Z",
   "jobs": [
     {
       "id": "3f048be46a11cf60",
@@ -841,6 +841,24 @@
         "Python",
         "C",
         "Linux"
+      ]
+    },
+    {
+      "id": "9c86fc2041ad047b",
+      "title": "Marketing Intern",
+      "company": "sarvam",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.ashbyhq.com/sarvam/ef7f079b-6a1f-4b27-9cfb-a5f68fe825c7/application",
+      "source": "Ashby",
+      "publishedAt": "2026-09-17T09:02:11.303+00:00",
+      "discoveredAt": "2026-09-17T09:02:11.303+00:00",
+      "score": 11,
+      "matchLevel": "Stretch",
+      "roleCategory": "Full Stack Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C",
+        "Git"
       ]
     },
     {
