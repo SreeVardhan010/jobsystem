@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-18T13:44:12.420Z",
+  "updatedAt": "2026-09-18T17:33:26.515Z",
   "jobs": [
     {
       "id": "3f048be46a11cf60",
@@ -981,6 +981,23 @@
       "matchLevel": "Stretch",
       "roleCategory": "Software Engineer",
       "cityCategory": "Bengaluru",
+      "skills": [
+        "C"
+      ]
+    },
+    {
+      "id": "5be18dfd29cf44fc",
+      "title": "Product and Regulatory Counsel",
+      "company": "bazaarvoice",
+      "location": "Remote, United States",
+      "applyUrl": "https://jobs.lever.co/bazaarvoice/a46c197d-63a1-4726-b877-fc7fce6d3160",
+      "source": "Lever",
+      "publishedAt": "2026-09-09T20:33:03.841Z",
+      "discoveredAt": "2026-09-09T20:33:03.841Z",
+      "score": 5,
+      "matchLevel": "Stretch",
+      "roleCategory": "Machine Learning Engineer",
+      "cityCategory": "Remote India",
       "skills": [
         "C"
       ]
