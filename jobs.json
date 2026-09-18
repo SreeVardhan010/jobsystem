@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-18T09:07:34.474Z",
+  "updatedAt": "2026-09-18T13:44:12.420Z",
   "jobs": [
     {
       "id": "3f048be46a11cf60",
@@ -579,6 +579,23 @@
       ]
     },
     {
+      "id": "8a32387632ba15ee",
+      "title": "SDE III - Engineering Productivity (AI)",
+      "company": "safe",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.lever.co/safe/d27c2846-c34b-461a-bcce-b8889014102e",
+      "source": "Lever",
+      "publishedAt": "2026-09-18T11:34:47.055Z",
+      "discoveredAt": "2026-09-18T11:34:47.055Z",
+      "score": 25,
+      "matchLevel": "Stretch",
+      "roleCategory": "Software Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C"
+      ]
+    },
+    {
       "id": "2e403ade292ddaa9",
       "title": "Software Engineer, Backend",
       "company": "Wisdom-AI",
@@ -949,6 +966,23 @@
       "skills": [
         "C",
         "Git"
+      ]
+    },
+    {
+      "id": "0d2b97014d3fd82b",
+      "title": "SDE II - AI Platform",
+      "company": "safe",
+      "location": "Bengaluru",
+      "applyUrl": "https://jobs.lever.co/safe/fb78afcd-5711-44d4-8533-56a6349dd528",
+      "source": "Lever",
+      "publishedAt": "2026-09-18T11:31:28.127Z",
+      "discoveredAt": "2026-09-18T11:31:28.127Z",
+      "score": 5,
+      "matchLevel": "Stretch",
+      "roleCategory": "Software Engineer",
+      "cityCategory": "Bengaluru",
+      "skills": [
+        "C"
       ]
     },
     {
